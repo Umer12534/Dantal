@@ -1,0 +1,1138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PureSmile Dental Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ─── NAV ─────────────────────────────────────────────── -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#home" class="nav__logo">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path
+              d="M14 2C10 2 6 5.5 6 10c0 2 .6 3.8 1.5 5.2C9 17.5 9.5 20 9.5 22.5c0 1.5.7 2.5 2 2.5h5c1.3 0 2-1 2-2.5 0-2.5.5-5 2-7.3C21.4 13.8 22 12 22 10c0-4.5-4-8-8-8z"
+              fill="#1AAFA0"
+            />
+          </svg>
+          <span>PureSmile</span>
+        </a>
+        <nav class="nav__links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#team">Team</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" class="nav__cta">Book Appointment</a>
+        </nav>
+        <button class="nav__burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" onclick="closeMobile()">Home</a>
+      <a href="#services" onclick="closeMobile()">Services</a>
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#team" onclick="closeMobile()">Team</a>
+      <a href="#testimonials" onclick="closeMobile()">Reviews</a>
+      <a href="#faq" onclick="closeMobile()">FAQ</a>
+      <a href="#contact" onclick="closeMobile()" class="mobile-menu__cta"
+        >Book Appointment</a
+      >
+    </div>
+
+    <!-- ─── HERO ──────────────────────────────────────────────── -->
+    <section class="hero" id="home">
+      <div class="hero__bg-shapes">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+      </div>
+      <div class="hero__inner">
+        <div class="hero__text">
+          <span class="hero__eyebrow">Gujrat's Premier Dental Care</span>
+          <h1 class="hero__headline">
+            A smile that<br />
+            <em>lasts a lifetime.</em>
+          </h1>
+          <p class="hero__sub">
+            We combine advanced technology with gentle, patient-first care — so
+            every visit feels less like a clinic and more like a fresh start.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary"
+              >Book Free Consultation</a
+            >
+            <a href="#services" class="btn btn--ghost">Explore Services</a>
+          </div>
+          <div class="hero__trust">
+            <div class="trust-item">
+              <span class="trust-item__num">4,800+</span>
+              <span class="trust-item__label">Happy Patients</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <span class="trust-item__num">14 yrs</span>
+              <span class="trust-item__label">Of Excellence</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <span class="trust-item__num">98%</span>
+              <span class="trust-item__label">Satisfaction Rate</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="tooth-frame">
+            <svg
+              class="tooth-svg"
+              viewBox="0 0 340 400"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <clipPath id="toothClip">
+                  <path
+                    d="M170 8C120 8 60 55 60 110c0 28 10 52 22 72 18 28 22 68 22 98 0 28 12 50 30 62 10 6 20 8 30 8 8 0 18-2 26-8 6-4 12-10 16-18 4 8 10 14 16 18 8 6 18 8 26 8 10 0 20-2 30-8 18-12 30-34 30-62 0-30 4-70 22-98 12-20 22-44 22-72C312 55 220 8 170 8z"
+                  />
+                </clipPath>
+              </defs>
+              <image
+                href="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=340&h=400&fit=crop&crop=face"
+                width="340"
+                height="400"
+                clip-path="url(#toothClip)"
+                preserveAspectRatio="xMidYMid slice"
+              />
+              <path
+                d="M170 8C120 8 60 55 60 110c0 28 10 52 22 72 18 28 22 68 22 98 0 28 12 50 30 62 10 6 20 8 30 8 8 0 18-2 26-8 6-4 12-10 16-18 4 8 10 14 16 18 8 6 18 8 26 8 10 0 20-2 30-8 18-12 30-34 30-62 0-30 4-70 22-98 12-20 22-44 22-72C312 55 220 8 170 8z"
+                fill="none"
+                stroke="#1AAFA0"
+                stroke-width="3"
+                opacity="0.6"
+              />
+            </svg>
+            <div class="tooth-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  stroke="#1AAFA0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              ISO Certified Clinic
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ─── ANNOUNCEMENT BAR ──────────────────────────────────── -->
+    <div class="announce">
+      <div class="announce__inner">
+        <span
+          >🎉 New Patient Special: Free teeth whitening consultation with any
+          first visit —</span
+        >
+        <a href="#contact">Claim Now →</a>
+      </div>
+    </div>
+
+    <!-- ─── SERVICES ─────────────────────────────────────────── -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">What We Offer</span>
+          <h2 class="section-title">Complete care, under one roof</h2>
+          <p class="section-sub">
+            From routine cleanings to full smile transformations — every
+            treatment delivered with precision and care.
+          </p>
+        </div>
+        <div class="services__grid">
+          <div class="service-card service-card--featured">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#D6F0EA" />
+                <path
+                  d="M24 10c-5 0-10 4.5-10 10 0 3 1 5.5 2.5 7.5 2 3 2.5 7 2.5 10 0 3 1.5 5 4 5h2c2.5 0 4-2 4-5 0-3 .5-7 2.5-10C32.5 25.5 34 23 34 20c0-5.5-5-10-10-10z"
+                  fill="#1AAFA0"
+                />
+              </svg>
+            </div>
+            <h3>General Dentistry</h3>
+            <p>
+              Routine exams, professional cleanings, fillings, and preventive
+              care to keep your smile healthy year-round.
+            </p>
+            <a href="#contact" class="service-card__link">Learn more →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#FEE9E6" />
+                <path
+                  d="M16 20c0-4 3.6-8 8-8s8 4 8 8c0 2-.5 4-1.5 5.5C29 28 29 32 29 34c0 2-1 3-2.5 3h-5c-1.5 0-2.5-1-2.5-3 0-2 0-6-1.5-8.5C16.5 24 16 22 16 20z"
+                  fill="#F26B5B"
+                  opacity=".8"
+                />
+              </svg>
+            </div>
+            <h3>Cosmetic Dentistry</h3>
+            <p>
+              Veneers, whitening, bonding, and smile design — crafted to give
+              you the confidence to show your teeth.
+            </p>
+            <a href="#contact" class="service-card__link">Learn more →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#E8EEF8" />
+                <rect
+                  x="17"
+                  y="14"
+                  width="14"
+                  height="20"
+                  rx="4"
+                  fill="#2563EB"
+                  opacity=".7"
+                />
+                <rect
+                  x="20"
+                  y="18"
+                  width="8"
+                  height="3"
+                  rx="1.5"
+                  fill="white"
+                />
+                <rect
+                  x="20"
+                  y="23"
+                  width="8"
+                  height="3"
+                  rx="1.5"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <h3>Dental Implants</h3>
+            <p>
+              Permanent, natural-looking tooth replacement. Restore function and
+              aesthetics with titanium-grade precision.
+            </p>
+            <a href="#contact" class="service-card__link">Learn more →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#D6F0EA" />
+                <path
+                  d="M14 22h20M14 26h14"
+                  stroke="#1AAFA0"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M24 14c0 0-6 4-6 10s6 10 6 10 6-4 6-10-6-10-6-10z"
+                  fill="#1AAFA0"
+                  opacity=".3"
+                />
+              </svg>
+            </div>
+            <h3>Orthodontics</h3>
+            <p>
+              Traditional braces and clear aligners (Invisalign-compatible) for
+              teens and adults. Straight teeth at any age.
+            </p>
+            <a href="#contact" class="service-card__link">Learn more →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#FFF3CD" />
+                <path
+                  d="M24 14l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z"
+                  fill="#F59E0B"
+                />
+              </svg>
+            </div>
+            <h3>Teeth Whitening</h3>
+            <p>
+              Professional in-chair and take-home whitening systems. Up to 8
+              shades brighter in a single session.
+            </p>
+            <a href="#contact" class="service-card__link">Learn more →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#F3E8FF" />
+                <path
+                  d="M18 20c0-3.3 2.7-6 6-6s6 2.7 6 6v2c0 3.3-2.7 6-6 6s-6-2.7-6-6v-2z"
+                  fill="#9333EA"
+                  opacity=".7"
+                />
+                <path
+                  d="M20 32c0 0 1 4 4 4s4-4 4-4"
+                  stroke="#9333EA"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Root Canal Therapy</h3>
+            <p>
+              Pain-free endodontic treatment with modern rotary systems. Save
+              your natural tooth — no drama, no downtime.
+            </p>
+            <a href="#contact" class="service-card__link">Learn more →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#FEE9E6" />
+                <rect
+                  x="16"
+                  y="20"
+                  width="16"
+                  height="10"
+                  rx="3"
+                  fill="#F26B5B"
+                  opacity=".8"
+                />
+                <path
+                  d="M19 20v-3a5 5 0 0110 0v3"
+                  stroke="#F26B5B"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Pediatric Dentistry</h3>
+            <p>
+              A child-friendly environment built to ease anxiety. We make first
+              dental visits positive, memorable, and fun.
+            </p>
+            <a href="#contact" class="service-card__link">Learn more →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#E8EEF8" />
+                <path
+                  d="M24 16v16M16 24h16"
+                  stroke="#2563EB"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Emergency Dental</h3>
+            <p>
+              Same-day appointments for toothache, broken teeth, lost fillings,
+              and dental trauma. We're here when it hurts.
+            </p>
+            <a href="#contact" class="service-card__link">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── HOW IT WORKS ──────────────────────────────────────── -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Your Journey</span>
+          <h2 class="section-title">Simple steps to a healthier smile</h2>
+        </div>
+        <div class="process__steps">
+          <div class="process-step">
+            <div class="process-step__dot">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="process-step__line"></div>
+            <div class="process-step__content">
+              <h4>Book Online or Call</h4>
+              <p>
+                Choose a time that works for you. We offer morning, evening, and
+                weekend slots with zero waiting room surprises.
+              </p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-step__dot">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="process-step__line"></div>
+            <div class="process-step__content">
+              <h4>Comprehensive Exam</h4>
+              <p>
+                Digital X-rays, full oral health assessment, and an honest
+                conversation about your treatment options.
+              </p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-step__dot">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="process-step__line"></div>
+            <div class="process-step__content">
+              <h4>Personalised Treatment Plan</h4>
+              <p>
+                Your dentist explains every option clearly. No pressure, no
+                jargon — just a plan tailored to your goals and budget.
+              </p>
+            </div>
+          </div>
+          <div class="process-step process-step--last">
+            <div class="process-step__dot process-step__dot--accent">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="process-step__content">
+              <h4>Leave with a Smile</h4>
+              <p>
+                Walk out feeling confident. We schedule your follow-up care and
+                send aftercare reminders automatically.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ──────────────────────────────────────────────── -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__visual">
+            <div class="about__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=520&h=600&fit=crop"
+                alt="Modern dental clinic interior"
+                loading="lazy"
+              />
+              <div class="about__stat-badge">
+                <span class="about__stat-num">14</span>
+                <span class="about__stat-label"
+                  >Years of<br />trusted care</span
+                >
+              </div>
+            </div>
+            <div class="about__secondary-img">
+              <img
+                src="https://images.unsplash.com/photo-1588776814546-1ffbb7e9f99e?w=240&h=200&fit=crop"
+                alt="Dental equipment"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="about__text">
+            <span class="section-eyebrow">Our Story</span>
+            <h2 class="section-title">
+              Built on trust.<br />Driven by science.
+            </h2>
+            <p>
+              PureSmile was founded in 2010 with a single idea: dental care
+              shouldn't feel intimidating. Our clinic was designed from the
+              ground up to be calming, clean, and completely transparent — where
+              every patient understands what's happening and why.
+            </p>
+            <p>
+              We invest in the latest technology, from digital impressions to
+              laser-assisted procedures, because your time and comfort matter as
+              much as your outcome.
+            </p>
+            <ul class="about__pillars">
+              <li>
+                <svg viewBox="0 0 20 20" fill="none">
+                  <circle
+                    cx="10"
+                    cy="10"
+                    r="9"
+                    stroke="#1AAFA0"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M7 10l2 2 4-4"
+                    stroke="#1AAFA0"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <span>Pain-free, anxiety-aware treatment protocols</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none">
+                  <circle
+                    cx="10"
+                    cy="10"
+                    r="9"
+                    stroke="#1AAFA0"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M7 10l2 2 4-4"
+                    stroke="#1AAFA0"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <span>No hidden fees — full cost clarity before you begin</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none">
+                  <circle
+                    cx="10"
+                    cy="10"
+                    r="9"
+                    stroke="#1AAFA0"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M7 10l2 2 4-4"
+                    stroke="#1AAFA0"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <span>State-of-the-art sterilisation and safety standards</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none">
+                  <circle
+                    cx="10"
+                    cy="10"
+                    r="9"
+                    stroke="#1AAFA0"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M7 10l2 2 4-4"
+                    stroke="#1AAFA0"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <span>Family-friendly care from age 3 to 93</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn--primary">Meet Our Team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── TEAM ──────────────────────────────────────────────── -->
+    <section class="team" id="team">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">The Experts</span>
+          <h2 class="section-title">Faces behind your smile</h2>
+          <p class="section-sub">
+            Our team of certified specialists brings decades of combined
+            experience — and a genuine love for what they do.
+          </p>
+        </div>
+        <div class="team__grid">
+          <div class="team-card">
+            <div class="team-card__img">
+              <img
+                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&h=340&fit=crop&crop=face"
+                alt="Dr. Ayesha Malik"
+                loading="lazy"
+              />
+              <div class="team-card__social">
+                <a href="#" aria-label="LinkedIn">in</a>
+              </div>
+            </div>
+            <div class="team-card__info">
+              <h4>Dr. Ayesha Malik</h4>
+              <span class="team-card__role"
+                >Principal Dentist & Cosmetic Specialist</span
+              >
+              <p>
+                BDS, FCPS · 12 years of practice · Trained in London & Dubai
+              </p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card__img">
+              <img
+                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=300&h=340&fit=crop&crop=face"
+                alt="Dr. Hassan Raza"
+                loading="lazy"
+              />
+              <div class="team-card__social">
+                <a href="#" aria-label="LinkedIn">in</a>
+              </div>
+            </div>
+            <div class="team-card__info">
+              <h4>Dr. Hassan Raza</h4>
+              <span class="team-card__role"
+                >Orthodontist & Implant Surgeon</span
+              >
+              <p>
+                BDS, MSc Orthodontics · 10 years · Fellowship in Implantology
+              </p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card__img">
+              <img
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&h=340&fit=crop&crop=face"
+                alt="Dr. Sana Tariq"
+                loading="lazy"
+              />
+              <div class="team-card__social">
+                <a href="#" aria-label="LinkedIn">in</a>
+              </div>
+            </div>
+            <div class="team-card__info">
+              <h4>Dr. Sana Tariq</h4>
+              <span class="team-card__role">Pediatric Dentist</span>
+              <p>
+                BDS, MCPS Pediatric Dentistry · 8 years · Child anxiety
+                specialist
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── TESTIMONIALS ──────────────────────────────────────── -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header section-header--light">
+          <span class="section-eyebrow section-eyebrow--light"
+            >Patient Reviews</span
+          >
+          <h2 class="section-title">Words from real patients</h2>
+        </div>
+        <div class="testimonials__grid">
+          <div class="testi-card">
+            <div class="testi-card__stars">★★★★★</div>
+            <blockquote>
+              "I've had dental anxiety my whole life. Dr. Ayesha was the first
+              dentist who actually listened. The whole experience felt calm and
+              controlled — and my veneers look absolutely unreal."
+            </blockquote>
+            <div class="testi-card__author">
+              <div class="testi-card__avatar">SR</div>
+              <div>
+                <strong>Sadia Rehman</strong>
+                <span>Cosmetic Veneers Patient</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card testi-card--accent">
+            <div class="testi-card__stars">★★★★★</div>
+            <blockquote>
+              "Brought my 5-year-old for the first time and she actually asked
+              to come back. The team made it a game. Dr. Sana is incredible with
+              kids."
+            </blockquote>
+            <div class="testi-card__author">
+              <div class="testi-card__avatar">TA</div>
+              <div>
+                <strong>Tariq Ahmed</strong>
+                <span>Parent — Pediatric Patient</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-card__stars">★★★★★</div>
+            <blockquote>
+              "Got two implants done. Zero pain during the procedure. Recovery
+              was faster than I expected. I eat normally now — something I
+              couldn't do for years. Worth every rupee."
+            </blockquote>
+            <div class="testi-card__author">
+              <div class="testi-card__avatar">MK</div>
+              <div>
+                <strong>Mohammad Khan</strong>
+                <span>Dental Implant Patient</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials__rating">
+          <div class="rating-badge">
+            <span class="rating-badge__num">4.9</span>
+            <div>
+              <div class="rating-badge__stars">★★★★★</div>
+              <span>Based on 620+ Google reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── TECHNOLOGY ─────────────────────────────────────────── -->
+    <section class="technology">
+      <div class="container">
+        <div class="tech__grid">
+          <div class="tech__text">
+            <span class="section-eyebrow">Our Equipment</span>
+            <h2 class="section-title">Advanced tech.<br />Gentle hands.</h2>
+            <p>
+              We continuously upgrade our equipment so you benefit from the same
+              tools used in the world's leading dental institutions — right here
+              in Gujrat.
+            </p>
+            <ul class="tech__list">
+              <li>
+                <span>Digital OPG & CBCT X-ray</span> — 3D imaging for precision
+                diagnosis
+              </li>
+              <li>
+                <span>Intraoral Cameras</span> — See exactly what we see, in
+                real time
+              </li>
+              <li>
+                <span>Laser Dentistry</span> — Less pain, faster healing, no
+                stitches
+              </li>
+              <li>
+                <span>CAD/CAM Same-Day Crowns</span> — No temporary crowns, no
+                second visit
+              </li>
+              <li>
+                <span>Digital Impressions</span> — No more messy putty moulds
+              </li>
+            </ul>
+          </div>
+          <div class="tech__visual">
+            <img
+              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=540&h=460&fit=crop"
+              alt="Modern dental equipment"
+              loading="lazy"
+            />
+            <div class="tech__badge">
+              <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                <path
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  stroke="#1AAFA0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              ISO 9001 Certified
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FAQ ───────────────────────────────────────────────── -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">FAQ</span>
+          <h2 class="section-title">Questions we hear every day</h2>
+        </div>
+        <div class="faq__grid">
+          <div class="faq-item">
+            <button class="faq-item__q" onclick="toggleFaq(this)">
+              Does dental treatment hurt?
+              <svg viewBox="0 0 24 24" fill="none" class="faq-icon">
+                <path
+                  d="M19 9l-7 7-7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <div class="faq-item__a">
+              <p>
+                Modern dentistry is far more comfortable than most people
+                expect. We use the finest local anaesthetics and offer sedation
+                options for anxious patients. Most procedures are completely
+                pain-free.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__q" onclick="toggleFaq(this)">
+              How often should I visit the dentist?
+              <svg viewBox="0 0 24 24" fill="none" class="faq-icon">
+                <path
+                  d="M19 9l-7 7-7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <div class="faq-item__a">
+              <p>
+                We recommend a check-up and cleaning every 6 months for most
+                patients. If you have active gum disease or other conditions,
+                more frequent visits may be advised.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__q" onclick="toggleFaq(this)">
+              What age should my child first visit?
+              <svg viewBox="0 0 24 24" fill="none" class="faq-icon">
+                <path
+                  d="M19 9l-7 7-7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <div class="faq-item__a">
+              <p>
+                We recommend bringing children in as soon as their first tooth
+                appears, or by age 1 at the latest. Early visits build healthy
+                habits and ease any fear of dental settings.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__q" onclick="toggleFaq(this)">
+              How long do dental implants last?
+              <svg viewBox="0 0 24 24" fill="none" class="faq-icon">
+                <path
+                  d="M19 9l-7 7-7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <div class="faq-item__a">
+              <p>
+                With proper care, dental implants can last a lifetime. The crown
+                on top may need replacement after 15–20 years depending on wear,
+                but the titanium root is essentially permanent.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__q" onclick="toggleFaq(this)">
+              Do you accept insurance or payment plans?
+              <svg viewBox="0 0 24 24" fill="none" class="faq-icon">
+                <path
+                  d="M19 9l-7 7-7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <div class="faq-item__a">
+              <p>
+                Yes. We work with most major insurance providers and offer
+                flexible 0% instalment plans for large treatments. Our care
+                coordinator will walk you through all your options before
+                treatment begins.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__q" onclick="toggleFaq(this)">
+              Is teeth whitening safe?
+              <svg viewBox="0 0 24 24" fill="none" class="faq-icon">
+                <path
+                  d="M19 9l-7 7-7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <div class="faq-item__a">
+              <p>
+                Professional whitening performed in a clinical setting is
+                completely safe. We use controlled concentrations far more
+                effective than over-the-counter kits, with gum protection
+                throughout.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT / BOOK ────────────────────────────────────── -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info">
+            <span class="section-eyebrow">Get in Touch</span>
+            <h2 class="section-title">Your next appointment starts here</h2>
+            <p>
+              Fill out the form and our team will confirm within 2 hours during
+              clinic hours. Emergency? Call us directly.
+            </p>
+            <div class="contact__details">
+              <div class="contact-detail">
+                <div class="contact-detail__icon">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      stroke="#1AAFA0"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      stroke="#1AAFA0"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Address</strong>
+                  <span>Civil Hospital Road, Gujrat, Punjab, Pakistan</span>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="contact-detail__icon">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      stroke="#1AAFA0"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Phone</strong>
+                  <span>+92 53 123 4567</span>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="contact-detail__icon">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      stroke="#1AAFA0"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Hours</strong>
+                  <span
+                    >Mon – Sat: 9:00 AM – 8:00 PM<br />Sunday: Emergency
+                    only</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form-wrap">
+            <div class="contact__form" id="bookingForm">
+              <h3>Book an Appointment</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" placeholder="Umer" />
+                </div>
+                <div class="form-group">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" placeholder="Zubair" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="umer@email.com" />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" placeholder="+92 300 0000000" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="service">Service Required</label>
+                <select id="service">
+                  <option value="">Select a service…</option>
+                  <option>General Dentistry</option>
+                  <option>Cosmetic Dentistry</option>
+                  <option>Dental Implants</option>
+                  <option>Orthodontics</option>
+                  <option>Teeth Whitening</option>
+                  <option>Root Canal</option>
+                  <option>Pediatric Dentistry</option>
+                  <option>Emergency Dental</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" />
+              </div>
+              <div class="form-group">
+                <label for="message">Additional Notes (optional)</label>
+                <textarea
+                  id="message"
+                  rows="3"
+                  placeholder="Any concerns or special requirements…"
+                ></textarea>
+              </div>
+              <button class="btn btn--primary btn--full" onclick="submitForm()">
+                Confirm Appointment Request
+              </button>
+              <p class="form-disclaimer">
+                We'll confirm within 2 hours · No commitment required
+              </p>
+            </div>
+            <div class="form-success" id="formSuccess" style="display: none">
+              <svg viewBox="0 0 64 64" fill="none" width="64" height="64">
+                <circle cx="32" cy="32" r="30" fill="#D6F0EA" />
+                <path
+                  d="M20 32l8 8 16-16"
+                  stroke="#1AAFA0"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h3>Appointment Requested!</h3>
+              <p>
+                We'll call you within 2 hours to confirm your slot. See you
+                soon!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ────────────────────────────────────────────── -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="#home" class="nav__logo">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path
+                  d="M14 2C10 2 6 5.5 6 10c0 2 .6 3.8 1.5 5.2C9 17.5 9.5 20 9.5 22.5c0 1.5.7 2.5 2 2.5h5c1.3 0 2-1 2-2.5 0-2.5.5-5 2-7.3C21.4 13.8 22 12 22 10c0-4.5-4-8-8-8z"
+                  fill="#1AAFA0"
+                />
+              </svg>
+              <span>PureSmile</span>
+            </a>
+            <p>
+              Gujrat's most trusted dental clinic, delivering gentle expert care
+              since 2010.
+            </p>
+            <div class="footer__socials">
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="Instagram">ig</a>
+              <a href="#" aria-label="WhatsApp">wa</a>
+            </div>
+          </div>
+          <div class="footer__links">
+            <div class="footer__col">
+              <h5>Services</h5>
+              <a href="#services">General Dentistry</a>
+              <a href="#services">Cosmetic Dentistry</a>
+              <a href="#services">Dental Implants</a>
+              <a href="#services">Orthodontics</a>
+              <a href="#services">Teeth Whitening</a>
+            </div>
+            <div class="footer__col">
+              <h5>Clinic</h5>
+              <a href="#about">About Us</a>
+              <a href="#team">Our Team</a>
+              <a href="#testimonials">Patient Reviews</a>
+              <a href="#faq">FAQ</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <div class="footer__col">
+              <h5>Contact</h5>
+              <span>Civil Hospital Road,<br />Gujrat, Punjab</span>
+              <a href="tel:+925312345">+92 53 123 4567</a>
+              <a href="mailto:hello@puresmile.pk">hello@puresmile.pk</a>
+              <span>Mon – Sat: 9AM – 8PM</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2025 PureSmile Dental Clinic. All rights reserved.</span>
+          <div class="footer__legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#contact" class="floating-cta">
+      <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+        <path
+          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+      Book Now
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
