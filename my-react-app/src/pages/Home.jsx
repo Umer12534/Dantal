@@ -183,12 +183,7 @@ const serviceOptions = services.map((service) => service.title);
 function Logo() {
   return (
     <a href="#home" className="nav__logo">
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-        <path
-          d="M14 2C10 2 6 5.5 6 10c0 2 .6 3.8 1.5 5.2C9 17.5 9.5 20 9.5 22.5c0 1.5.7 2.5 2 2.5h5c1.3 0 2-1 2-2.5 0-2.5.5-5 2-7.3C21.4 13.8 22 12 22 10c0-4.5-4-8-8-8z"
-          fill="#1AAFA0"
-        />
-      </svg>
+      <img src="" alt="" />
       <span>PureSmile</span>
     </a>
   );
@@ -223,15 +218,31 @@ function CheckIcon() {
 
 function ChevronIcon() {
   return (
-    <svg viewBox="0 0 24 24" fill="none" className="faq-icon" aria-hidden="true">
-      <path d="M19 9l-7 7-7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      className="faq-icon"
+      aria-hidden="true"
+    >
+      <path
+        d="M19 9l-7 7-7-7"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
 
 function CalendarIcon({ stroke = "white" }) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" width="20" height="20" aria-hidden="true">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      width="20"
+      height="20"
+      aria-hidden="true"
+    >
       <path
         d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
         stroke={stroke}
@@ -258,7 +269,12 @@ function Header({ isScrolled, isMenuOpen, onToggleMenu, onCloseMenu }) {
               Book Appointment
             </a>
           </nav>
-          <button className="nav__burger" type="button" aria-label="Menu" onClick={onToggleMenu}>
+          <button
+            className="nav__burger"
+            type="button"
+            aria-label="Menu"
+            onClick={onToggleMenu}
+          >
             <span />
             <span />
             <span />
@@ -266,7 +282,10 @@ function Header({ isScrolled, isMenuOpen, onToggleMenu, onCloseMenu }) {
         </div>
       </header>
 
-      <div className={`mobile-menu${isMenuOpen ? " open" : ""}`} id="mobileMenu">
+      <div
+        className={`mobile-menu${isMenuOpen ? " open" : ""}`}
+        id="mobileMenu"
+      >
         {navLinks.map(([href, label]) => (
           <a href={href} key={href} onClick={onCloseMenu}>
             {label}
@@ -296,8 +315,8 @@ function Hero() {
             <em>lasts a lifetime.</em>
           </h1>
           <p className="hero__sub">
-            We combine advanced technology with gentle, patient-first care so every visit feels
-            less like a clinic and more like a fresh start.
+            We combine advanced technology with gentle, patient-first care so
+            every visit feels less like a clinic and more like a fresh start.
           </p>
           <div className="hero__actions">
             <a href="#contact" className="btn btn--primary">
@@ -321,7 +340,11 @@ function Hero() {
         </div>
         <div className="hero__visual">
           <div className="tooth-frame">
-            <svg className="tooth-svg" viewBox="0 0 340 400" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              className="tooth-svg"
+              viewBox="0 0 340 400"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <defs>
                 <clipPath id="toothClip">
                   <path d="M170 8C120 8 60 55 60 110c0 28 10 52 22 72 18 28 22 68 22 98 0 28 12 50 30 62 10 6 20 8 30 8 8 0 18-2 26-8 6-4 12-10 16-18 4 8 10 14 16 18 8 6 18 8 26 8 10 0 20-2 30-8 18-12 30-34 30-62 0-30 4-70 22-98 12-20 22-44 22-72C312 55 220 8 170 8z" />
@@ -360,7 +383,9 @@ function Hero() {
 function SectionHeader({ eyebrow, title, sub, light = false }) {
   return (
     <div className={`section-header${light ? " section-header--light" : ""}`}>
-      <span className={`section-eyebrow${light ? " section-eyebrow--light" : ""}`}>
+      <span
+        className={`section-eyebrow${light ? " section-eyebrow--light" : ""}`}
+      >
         {eyebrow}
       </span>
       <h2 className="section-title">{title}</h2>
@@ -373,7 +398,10 @@ function Announcement() {
   return (
     <div className="announce">
       <div className="announce__inner">
-        <span>New Patient Special: Free teeth whitening consultation with any first visit -</span>
+        <span>
+          New Patient Special: Free teeth whitening consultation with any first
+          visit -
+        </span>
         <a href="#contact">Claim Now</a>
       </div>
     </div>
@@ -415,17 +443,24 @@ function Process() {
   return (
     <section className="process" id="process">
       <div className="container">
-        <SectionHeader eyebrow="Your Journey" title="Simple steps to a healthier smile" />
+        <SectionHeader
+          eyebrow="Your Journey"
+          title="Simple steps to a healthier smile"
+        />
         <div className="process__steps">
           {processSteps.map((step, index) => (
             <div
               className={`process-step${index === processSteps.length - 1 ? " process-step--last" : ""}`}
               key={step.title}
             >
-              <div className={`process-step__dot${step.accent ? " process-step__dot--accent" : ""}`}>
+              <div
+                className={`process-step__dot${step.accent ? " process-step__dot--accent" : ""}`}
+              >
                 <CalendarIcon />
               </div>
-              {index < processSteps.length - 1 && <div className="process-step__line" />}
+              {index < processSteps.length - 1 && (
+                <div className="process-step__line" />
+              )}
               <div className="process-step__content">
                 <h4>{step.title}</h4>
                 <p>{step.text}</p>
@@ -475,13 +510,15 @@ function About() {
               Driven by science.
             </h2>
             <p>
-              PureSmile was founded in 2010 with a single idea: dental care should not feel
-              intimidating. Our clinic is calming, clean, and transparent, so every patient
-              understands what is happening and why.
+              PureSmile was founded in 2010 with a single idea: dental care
+              should not feel intimidating. Our clinic is calming, clean, and
+              transparent, so every patient understands what is happening and
+              why.
             </p>
             <p>
-              We invest in the latest technology, from digital impressions to laser-assisted
-              procedures, because your time and comfort matter as much as your outcome.
+              We invest in the latest technology, from digital impressions to
+              laser-assisted procedures, because your time and comfort matter as
+              much as your outcome.
             </p>
             <ul className="about__pillars">
               {pillars.map((pillar) => (
@@ -538,10 +575,17 @@ function Testimonials() {
   return (
     <section className="testimonials" id="testimonials">
       <div className="container">
-        <SectionHeader eyebrow="Patient Reviews" title="Words from real patients" light />
+        <SectionHeader
+          eyebrow="Patient Reviews"
+          title="Words from real patients"
+          light
+        />
         <div className="testimonials__grid">
           {testimonials.map((item) => (
-            <div className={`testi-card${item.accent ? " testi-card--accent" : ""}`} key={item.name}>
+            <div
+              className={`testi-card${item.accent ? " testi-card--accent" : ""}`}
+              key={item.name}
+            >
               <div className="testi-card__stars" aria-label="5 stars">
                 *****
               </div>
@@ -583,8 +627,8 @@ function Technology() {
               Gentle hands.
             </h2>
             <p>
-              We continuously upgrade our equipment so you benefit from the same tools used in
-              leading dental institutions right here in Gujrat.
+              We continuously upgrade our equipment so you benefit from the same
+              tools used in leading dental institutions right here in Gujrat.
             </p>
             <ul className="tech__list">
               {techItems.map(([name, detail]) => (
@@ -623,7 +667,10 @@ function FAQ() {
             const isOpen = openIndex === index;
 
             return (
-              <div className={`faq-item${isOpen ? " open" : ""}`} key={question}>
+              <div
+                className={`faq-item${isOpen ? " open" : ""}`}
+                key={question}
+              >
                 <button
                   className="faq-item__q"
                   type="button"
@@ -662,8 +709,8 @@ function Contact() {
             <span className="section-eyebrow">Get in Touch</span>
             <h2 className="section-title">Your next appointment starts here</h2>
             <p>
-              Fill out the form and our team will confirm within 2 hours during clinic hours.
-              Emergency? Call us directly.
+              Fill out the form and our team will confirm within 2 hours during
+              clinic hours. Emergency? Call us directly.
             </p>
             <div className="contact__details">
               {[
@@ -701,11 +748,20 @@ function Contact() {
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="email">Email</label>
-                    <input type="email" id="email" placeholder="umer@email.com" required />
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="umer@email.com"
+                      required
+                    />
                   </div>
                   <div className="form-group">
                     <label htmlFor="phone">Phone</label>
-                    <input type="tel" id="phone" placeholder="+92 300 0000000" />
+                    <input
+                      type="tel"
+                      id="phone"
+                      placeholder="+92 300 0000000"
+                    />
                   </div>
                 </div>
                 <div className="form-group">
@@ -723,16 +779,28 @@ function Contact() {
                 </div>
                 <div className="form-group">
                   <label htmlFor="message">Additional Notes (optional)</label>
-                  <textarea id="message" rows="3" placeholder="Any concerns or special requirements" />
+                  <textarea
+                    id="message"
+                    rows="3"
+                    placeholder="Any concerns or special requirements"
+                  />
                 </div>
                 <button className="btn btn--primary btn--full" type="submit">
                   Confirm Appointment Request
                 </button>
-                <p className="form-disclaimer">We'll confirm within 2 hours. No commitment required</p>
+                <p className="form-disclaimer">
+                  We'll confirm within 2 hours. No commitment required
+                </p>
               </form>
             ) : (
               <div className="form-success">
-                <svg viewBox="0 0 64 64" fill="none" width="64" height="64" aria-hidden="true">
+                <svg
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  width="64"
+                  height="64"
+                  aria-hidden="true"
+                >
                   <circle cx="32" cy="32" r="30" fill="#D6F0EA" />
                   <path
                     d="M20 32l8 8 16-16"
@@ -743,7 +811,10 @@ function Contact() {
                   />
                 </svg>
                 <h3>Appointment Requested!</h3>
-                <p>We'll call you within 2 hours to confirm your slot. See you soon!</p>
+                <p>
+                  We'll call you within 2 hours to confirm your slot. See you
+                  soon!
+                </p>
               </div>
             )}
           </div>
@@ -783,11 +854,20 @@ function Footer() {
         <div className="footer__top">
           <div className="footer__brand">
             <Logo />
-            <p>Gujrat's most trusted dental clinic, delivering gentle expert care since 2010.</p>
+            <p>
+              Gujrat's most trusted dental clinic, delivering gentle expert care
+              since 2010.
+            </p>
             <div className="footer__socials">
-              <a href="#" aria-label="Facebook">f</a>
-              <a href="#" aria-label="Instagram">ig</a>
-              <a href="#" aria-label="WhatsApp">wa</a>
+              <a href="#" aria-label="Facebook">
+                f
+              </a>
+              <a href="#" aria-label="Instagram">
+                ig
+              </a>
+              <a href="#" aria-label="WhatsApp">
+                wa
+              </a>
             </div>
           </div>
           <div className="footer__links">
@@ -815,7 +895,9 @@ function Footer() {
           </div>
         </div>
         <div className="footer__bottom">
-          <span>Copyright 2025 PureSmile Dental Clinic. All rights reserved.</span>
+          <span>
+            Copyright 2025 PureSmile Dental Clinic. All rights reserved.
+          </span>
           <div className="footer__legal">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
@@ -872,9 +954,12 @@ export default function Home() {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
 
-          window.setTimeout(() => {
-            entry.target.classList.add("in-view");
-          }, 80 * (fadeEls.indexOf(entry.target) % 6));
+          window.setTimeout(
+            () => {
+              entry.target.classList.add("in-view");
+            },
+            80 * (fadeEls.indexOf(entry.target) % 6),
+          );
           observer.unobserve(entry.target);
         });
       },
